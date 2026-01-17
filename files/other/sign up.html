@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sign-Up Here</title>
+      <link
+         rel="stylesheet"
+         href="../bootstrap/css important/bootstrap.min.css"
+         />
+      <style>
+         body {
+         font-family: Arial, sans-serif;
+         background-color: white;
+         margin: 0;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .signup-container {
+         border: 1px solid #ccc;
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         max-width: 800px;
+         width: 100%;
+         }
+         .signup-container h2 {
+         margin-bottom: 20px;
+         }
+         .signup-container label {
+         display: block;
+         margin: 10px 0 5px;
+         }
+         .signup-container input {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 10px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         }
+         .buton {
+         background-color: green;
+         color: white;
+         padding: 10px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         width: 100%;
+         }
+         .signup-container .login-link {
+         margin-top: 10px;
+         display: block;
+         text-align: center;
+         }
+
+      </style>
+   </head>
+   <body style="background-color: #f4f9f4">
+      <div class="border-2 signup-container border-dark-subtale">
+         <h1 style="text-align: center"><b>Sign Up</b></h1>
+         <form id="signupForm" action="processsignup.php" method="post">
+            <div class="row">
+               <div class="col">
+                  <label>First name</label>
+                  <input
+                     type="text"
+                     class="mt-2 form-control"
+                     name="f_name"
+                     placeholder="First name"
+                     id="fname"
+                     required
+                     />
+               </div>
+               <div class="col">
+                  <label>Last name</label>
+                  <input
+                     type="text"
+                     class="mt-2 form-control"
+                     placeholder="Last name"
+                     id="lname"
+                     name="l_name"
+                     required
+                     />
+               </div>
+            </div>
+            <label for="username">Username</label>
+            <input
+               type="text"
+               id="username"
+               name="username"
+               class="form-control"
+               placeholder="Choose your username"
+               required
+               />
+            <small id="em" class="form-text text-muted"
+               >You can not change this username later.
+            </small>
+            <label for="email">Email</label>
+            <input
+               type="email"
+               id="email"
+               class="form-control"
+               name="email"
+               placeholder="Email"
+               required
+               />
+            <small id="em" class="form-text text-muted"
+               >We will never share your private details with anyone else</small
+               >
+            <label>Gender</label>
+            <div class="form-group">
+               <select
+                  name="gender"
+                  class="form-control form-select"
+                  id="s1"
+                  required
+                  >
+                  <option value="Not selected" selected>Not Selected</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+               </select>
+               <small id="em" class="form-text text-muted"
+                  >can not change your Gender later.
+               </small>
+            </div>
+            <label>Select Your Country</label>
+            <div class="form-group">
+               <select
+                  name="country"
+                  id="country"
+                  class="form-control form-select"
+                  required
+                  >
+                  <option value="no" selected>Not Selected</option>
+                  <option data-countryCode="DZ" value="Algeria">Algeria</option>
+                  <option data-countryCode="AD" value="Andorra">Andorra</option>
+                  <option data-countryCode="AO" value="Angola">Angola</option>
+                  <option data-countryCode="AI" value="Anguilla">Anguilla</option>
+                  <option data-countryCode="AG" value="Antigua & Barbuda">
+                     Antigua & Barbuda
+                  </option>
+                  <option data-countryCode="AR" value="Argentina">Argentina</option>
+                  <option data-countryCode="AM" value="Armenia">Armenia</option>
+                  <option data-countryCode="AW" value="Aruba">Aruba</option>
+                  <option data-countryCode="AU" value="Australia">Australia</option>
+                  <option data-countryCode="AT" value="Austria">Austria</option>
+                  <option data-countryCode="AZ" value="Azerbaijan">Azerbaijan</option>
+                  <option data-countryCode="BS" value="Bahamas">Bahamas</option>
+                  <option data-countryCode="BH" value="Bahrain">Bahrain</option>
+                  <option data-countryCode="BD" value="Bangladesh">Bangladesh</option>
+                  <option data-countryCode="BB" value="Barbados">Barbados</option>
+                  <option data-countryCode="BY" value="Belarus">Belarus</option>
+                  <option data-countryCode="BE" value="Belgium">Belgium</option>
+                  <option data-countryCode="BZ" value="Belize">Belize</option>
+                  <option data-countryCode="BJ" value="Benin">Benin</option>
+                  <option data-countryCode="BM" value="Bermuda">Bermuda</option>
+                  <option data-countryCode="BT" value="Bhutan">Bhutan</option>
+                  <option data-countryCode="BO" value="Bolivia">Bolivia</option>
+                  <option data-countryCode="BA" value="Bosnia Herzegovina">
+                     Bosnia Herzegovina
+                  </option>
+                  <option data-countryCode="BW" value="Botswana">Botswana</option>
+                  <option data-countryCode="BR" value="Brazil">Brazil</option>
+                  <option data-countryCode="BN" value="Brunei">Brunei</option>
+                  <option data-countryCode="BG" value="Bulgaria">Bulgaria</option>
+                  <option data-countryCode="BF" value="Burkina Faso">
+                     Burkina Faso
+                  </option>
+                  <option data-countryCode="BI" value="Burundi">Burundi</option>
+                  <option data-countryCode="KH" value="Cambodia">Cambodia</option>
+                  <option data-countryCode="CM" value="Cameroon">Cameroon</option>
+                  <option data-countryCode="CA" value="Canada">Canada</option>
+                  <option data-countryCode="CV" value="Cape Verde Islands">
+                     Cape Verde Islands
+                  </option>
+                  <option data-countryCode="KY" value="Cayman Islands">
+                     Cayman Islands
+                  </option>
+                  <option data-countryCode="CF" value="Central African Republic">
+                     Central African Republic
+                  </option>
+                  <option data-countryCode="CL" value="Chile">Chile</option>
+                  <option data-countryCode="CN" value="China">China</option>
+                  <option data-countryCode="CO" value="Colombia">Colombia</option>
+                  <option data-countryCode="KM" value="Comoros">Comoros</option>
+                  <option data-countryCode="CG" value="Congo">Congo</option>
+                  <option data-countryCode="CK" value="Cook Islands">
+                     Cook Islands
+                  </option>
+                  <option data-countryCode="CR" value="Costa Rica">Costa Rica</option>
+                  <option data-countryCode="HR" value="Croatia">Croatia</option>
+                  <option data-countryCode="CU" value="Cuba">Cuba</option>
+                  <option data-countryCode="CY" value="Cyprus North">
+                     Cyprus North
+                  </option>
+                  <option data-countryCode="CY" value="Cyprus South">
+                     Cyprus South
+                  </option>
+                  <option data-countryCode="CZ" value="Czech Republic">
+                     Czech Republic
+                  </option>
+                  <option data-countryCode="DK" value="Denmark">Denmark</option>
+                  <option data-countryCode="DJ" value="Djibouti">Djibouti</option>
+                  <option data-countryCode="DM" value="Dominica">Dominica</option>
+                  <option data-countryCode="DO" value="Dominican Republic">
+                     Dominican Republic
+                  </option>
+                  <option data-countryCode="EC" value="Ecuador">Ecuador</option>
+                  <option data-countryCode="EG" value="Egypt">Egypt</option>
+                  <option data-countryCode="SV" value="El Salvador">
+                     El Salvador
+                  </option>
+                  <option data-countryCode="GQ" value="Equatorial Guinea">
+                     Equatorial Guinea
+                  </option>
+                  <option data-countryCode="ER" value="Eritrea">Eritrea</option>
+                  <option data-countryCode="EE" value="Estonia">Estonia</option>
+                  <option data-countryCode="ET" value="Ethiopia">Ethiopia</option>
+                  <option data-countryCode="FK" value="Falkland Islands">
+                     Falkland Islands
+                  </option>
+                  <option data-countryCode="FO" value="Faroe Islands">
+                     Faroe Islands
+                  </option>
+                  <option data-countryCode="FJ" value="Fiji">Fiji</option>
+                  <option data-countryCode="FI" value="Finland">Finland</option>
+                  <option data-countryCode="FR" value="France">France</option>
+                  <option data-countryCode="GF" value="French Guiana">
+                     French Guiana
+                  </option>
+                  <option data-countryCode="PF" value="French Polynesia">
+                     French Polynesia
+                  </option>
+                  <option data-countryCode="GA" value="Gabon">Gabon</option>
+                  <option data-countryCode="GM" value="Gambia">Gambia</option>
+                  <option data-countryCode="GE" value="Georgia">Georgia</option>
+                  <option data-countryCode="DE" value="Germany">Germany</option>
+                  <option data-countryCode="GH" value="Ghana">Ghana</option>
+                  <option data-countryCode="GI" value="Gibraltar">Gibraltar</option>
+                  <option data-countryCode="GR" value="Greece">Greece</option>
+                  <option data-countryCode="GL" value="Greenland">Greenland</option>
+                  <option data-countryCode="GD" value="Grenada">Grenada</option>
+                  <option data-countryCode="GP" value="Guadeloupe">Guadeloupe</option>
+                  <option data-countryCode="GU" value="Guam">Guam</option>
+                  <option data-countryCode="GT" value="Guatemala">Guatemala</option>
+                  <option data-countryCode="GN" value="Guinea">Guinea</option>
+                  <option data-countryCode="GW" value="Guinea - Bissau">
+                     Guinea - Bissau
+                  </option>
+                  <option data-countryCode="GY" value="Guyana">Guyana</option>
+                  <option data-countryCode="HT" value="Haiti">Haiti</option>
+                  <option data-countryCode="HN" value="Honduras">Honduras</option>
+                  <option data-countryCode="HK" value="Hong Kong">Hong Kong</option>
+                  <option data-countryCode="HU" value="Hungary">Hungary</option>
+                  <option data-countryCode="IS" value="Iceland">Iceland</option>
+                  <option data-countryCode="IN" value="India">India</option>
+                  <option data-countryCode="ID" value="Indonesia">Indonesia</option>
+                  <option data-countryCode="IR" value="Iran">Iran</option>
+                  <option data-countryCode="IQ" value="Iraq">Iraq</option>
+                  <option data-countryCode="IE" value="Ireland">Ireland</option>
+                  <option data-countryCode="IL" value="Israel">Israel</option>
+                  <option data-countryCode="IT" value="Italy">Italy</option>
+                  <option data-countryCode="JM" value="Jamaica">Jamaica</option>
+                  <option data-countryCode="JP" value="Japan">Japan</option>
+                  <option data-countryCode="JO" value="Jordan">Jordan</option>
+                  <option data-countryCode="KZ" value="Kazakhstan">Kazakhstan</option>
+                  <option data-countryCode="KE" value="Kenya">Kenya</option>
+                  <option data-countryCode="KI" value="Kiribati">Kiribati</option>
+                  <option data-countryCode="KP" value="Korea North">
+                     Korea North
+                  </option>
+                  <option data-countryCode="KR" value="Korea South">
+                     Korea South
+                  </option>
+                  <option data-countryCode="KW" value="Kuwait">Kuwait</option>
+                  <option data-countryCode="KG" value="Kyrgyzstan">Kyrgyzstan</option>
+                  <option data-countryCode="LA" value="Laos">Laos</option>
+                  <option data-countryCode="LV" value="Latvia">Latvia</option>
+                  <option data-countryCode="LB" value="Lebanon">Lebanon</option>
+                  <option data-countryCode="LS" value="Lesotho">Lesotho</option>
+                  <option data-countryCode="LR" value="Liberia">Liberia</option>
+                  <option data-countryCode="LY" value="Libya">Libya</option>
+                  <option data-countryCode="LI" value="Liechtenstein">
+                     Liechtenstein
+                  </option>
+                  <option data-countryCode="LT" value="Lithuania">Lithuania</option>
+                  <option data-countryCode="LU" value="Luxembourg">Luxembourg</option>
+                  <option data-countryCode="MO" value="Macao">Macao</option>
+                  <option data-countryCode="MK" value="Macedonia">Macedonia</option>
+                  <option data-countryCode="MG" value="Madagascar">Madagascar</option>
+                  <option data-countryCode="MW" value="Malawi">Malawi</option>
+                  <option data-countryCode="MY" value="Malaysia">Malaysia</option>
+                  <option data-countryCode="MV" value="Maldives">Maldives</option>
+                  <option data-countryCode="ML" value="Mali">Mali</option>
+                  <option data-countryCode="MT" value="Malta">Malta</option>
+                  <option data-countryCode="MH" value="Marshall Islands">
+                     Marshall Islands
+                  </option>
+                  <option data-countryCode="MQ" value="Martinique">Martinique</option>
+                  <option data-countryCode="MR" value="Mauritania">Mauritania</option>
+                  <option data-countryCode="YT" value="Mayotte">Mayotte</option>
+                  <option data-countryCode="MX" value="Mexico">Mexico</option>
+                  <option data-countryCode="FM" value="Micronesia">Micronesia</option>
+                  <option data-countryCode="MD" value="Moldova">Moldova</option>
+                  <option data-countryCode="MC" value="Monaco">Monaco</option>
+                  <option data-countryCode="MN" value="Mongolia">Mongolia</option>
+                  <option data-countryCode="MS" value="Montserrat">Montserrat</option>
+                  <option data-countryCode="MA" value="Morocco">Morocco</option>
+                  <option data-countryCode="MZ" value="Mozambique">Mozambique</option>
+                  <option data-countryCode="MN" value="Myanmar">Myanmar</option>
+                  <option data-countryCode="NA" value="Namibia">Namibia</option>
+                  <option data-countryCode="NR" value="Nauru">Nauru</option>
+                  <option data-countryCode="NP" value="Nepal">Nepal</option>
+                  <option data-countryCode="NL" value="Netherlands">
+                     Netherlands
+                  </option>
+                  <option data-countryCode="NC" value="New Caledonia">
+                     New Caledonia
+                  </option>
+                  <option data-countryCode="NZ" value="New Zealand">
+                     New Zealand
+                  </option>
+                  <option data-countryCode="NI" value="Nicaragua">Nicaragua</option>
+                  <option data-countryCode="NE" value="Niger">Niger</option>
+                  <option data-countryCode="NG" value="Nigeria">Nigeria</option>
+                  <option data-countryCode="NU" value="Niue">Niue</option>
+                  <option data-countryCode="NF" value="Norfolk Islands">
+                     Norfolk Islands
+                  </option>
+                  <option data-countryCode="MP" value="Northern Marianas">
+                     Northern Marianas
+                  </option>
+                  <option data-countryCode="NO" value="Norway">Norway</option>
+                  <option data-countryCode="OM" value="Oman">Oman</option>
+                  <option data-countryCode="PK" value="Pakistan">Pakistan</option>
+                  <option data-countryCode="PW" value="Palau">Palau</option>
+                  <option data-countryCode="PA" value="Panama">Panama</option>
+                  <option data-countryCode="PG" value="Papua New Guinea">
+                     Papua New Guinea
+                  </option>
+                  <option data-countryCode="PY" value="Paraguay">Paraguay</option>
+                  <option data-countryCode="PE" value="Peru">Peru</option>
+                  <option data-countryCode="PH" value="Philippines">
+                     Philippines
+                  </option>
+                  <option data-countryCode="PL" value="Poland">Poland</option>
+                  <option data-countryCode="PT" value="Portugal">Portugal</option>
+                  <option data-countryCode="PR" value="Puerto Rico">
+                     Puerto Rico
+                  </option>
+                  <option data-countryCode="QA" value="Qatar">Qatar</option>
+                  <option data-countryCode="RE" value="Reunion">Reunion</option>
+                  <option data-countryCode="RO" value="Romania">Romania</option>
+                  <option data-countryCode="RU" value="Russia">Russia</option>
+                  <option data-countryCode="RW" value="Rwanda">Rwanda</option>
+                  <option data-countryCode="SM" value="San Marino">San Marino</option>
+                  <option data-countryCode="ST" value="Sao Tome & Principe">
+                     Sao Tome & Principe
+                  </option>
+                  <option data-countryCode="SA" value="Saudi Arabia">
+                     Saudi Arabia
+                  </option>
+                  <option data-countryCode="SN" value="Senegal">Senegal</option>
+                  <option data-countryCode="CS" value="Serbia">Serbia</option>
+                  <option data-countryCode="SC" value="Seychelles">Seychelles</option>
+                  <option data-countryCode="SL" value="Sierra Leone">
+                     Sierra Leone
+                  </option>
+                  <option data-countryCode="SG" value="Singapore">Singapore</option>
+                  <option data-countryCode="SK" value="Slovak Republic">
+                     Slovak Republic
+                  </option>
+                  <option data-countryCode="SI" value="Slovenia">Slovenia</option>
+                  <option data-countryCode="SB" value="Solomon Islands">
+                     Solomon Islands
+                  </option>
+                  <option data-countryCode="SO" value="Somalia">Somalia</option>
+                  <option data-countryCode="ZA" value="South Africa">
+                     South Africa
+                  </option>
+                  <option data-countryCode="ES" value="Spain">Spain</option>
+                  <option data-countryCode="LK" value="Sri Lanka">Sri Lanka</option>
+                  <option data-countryCode="SH" value="St. Helena">St. Helena</option>
+                  <option data-countryCode="KN" value="St. Kitts">St. Kitts</option>
+                  <option data-countryCode="SC" value="St. Lucia">St. Lucia</option>
+                  <option data-countryCode="SD" value="Sudan">Sudan</option>
+                  <option data-countryCode="SR" value="Suriname">Suriname</option>
+                  <option data-countryCode="SZ" value="Swaziland">Swaziland</option>
+                  <option data-countryCode="SE" value="Sweden">Sweden</option>
+                  <option data-countryCode="CH" value="Switzerland">
+                     Switzerland
+                  </option>
+                  <option data-countryCode="SY" value="Syria">Syria</option>
+                  <option data-countryCode="TW" value="Taiwan">Taiwan</option>
+                  <option data-countryCode="TJ" value="Tajikstan">Tajikstan</option>
+                  <option data-countryCode="TH" value="Thailand">Thailand</option>
+                  <option data-countryCode="TG" value="Togo">Togo</option>
+                  <option data-countryCode="TO" value="Tonga">Tonga</option>
+                  <option data-countryCode="TT" value="Trinidad & Tobago">
+                     Trinidad & Tobago
+                  </option>
+                  <option data-countryCode="TN" value="Tunisia">Tunisia</option>
+                  <option data-countryCode="TR" value="Turkey">Turkey</option>
+                  <option data-countryCode="TM" value="Turkmenistan">
+                     Turkmenistan
+                  </option>
+                  <option data-countryCode="TC" value="Turks & Caicos Islands">
+                     Turks & Caicos Islands
+                  </option>
+                  <option data-countryCode="TV" value="Tuvalu">Tuvalu</option>
+                  <option data-countryCode="UG" value="Uganda">Uganda</option>
+                  <option data-countryCode="GB" value="UK">UK</option>
+                  <option data-countryCode="UA" value="Ukraine">Ukraine</option>
+                  <option data-countryCode="AE" value="United Arab Emirates">
+                     United Arab Emirates
+                  </option>
+                  <option data-countryCode="UY" value="Uruguay">Uruguay</option>
+                  <option data-countryCode="US" value="USA">USA</option>
+                  <option data-countryCode="UZ" value="Uzbekistan">Uzbekistan</option>
+                  <option data-countryCode="VU" value="Vanuatu">Vanuatu</option>
+                  <option data-countryCode="VA" value="Vatican City">
+                     Vatican City
+                  </option>
+                  <option data-countryCode="VE" value="Venezuela">Venezuela</option>
+                  <option data-countryCode="VN" value="Vietnam">Vietnam</option>
+                  <option data-countryCode="VG" value="Virgin Islands - British">
+                     Virgin Islands - British
+                  </option>
+                  <option data-countryCode="VI" value="Virgin Islands - US">
+                     Virgin Islands - US
+                  </option>
+                  <option data-countryCode="WF" value="Wallis & Futuna">
+                     Wallis & Futuna
+                  </option>
+                  <option data-countryCode="YE" value="Yemen (North)">
+                     Yemen (North)
+                  </option>
+                  <option data-countryCode="YE" value="Yemen (South)">
+                     Yemen (South)
+                  </option>
+                  <option data-countryCode="ZM" value="Zambia">Zambia</option>
+                  <option data-countryCode="ZW" value="Zimbabwe">Zimbabwe</option>
+               </select>
+               <small id="em" class="form-text text-muted"
+                  >You can not change Your Country later.
+               </small>
+            </div>
+            <label class="ms-0">What is you more like to explore....!</label>
+            <div class="form-check form-switch">
+               <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check1"
+                  name="check"
+                  />
+               <label class="form-check-label" for="check1">Beach Side</label>
+            </div>
+            <div class="form-check form-switch">
+               <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check2"
+                  name="check"
+                  />
+               <label class="form-check-label" for="check2">Country Side</label>
+            </div>
+            <div class="form-check form-switch">
+               <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check3"
+                  name="check"
+                  />
+               <label class="form-check-label" for="check3">Festivals</label>
+            </div>
+            <div class="form-check form-switch">
+               <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check4"
+                  name="check"
+                  />
+               <label class="form-check-label" for="check4">Foods</label>
+            </div>
+            <div class="form-check form-switch">
+               <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check5"
+                  name="check"
+                  />
+               <label class="form-check-label" for="check5">Nature</label>
+            </div>
+            <div class="form-check form-switch">
+               <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check6"
+                  name="check"
+                  />
+               <label class="form-check-label" for="check6">Adventure</label>
+            </div>
+            <div class="form-check form-switch">
+               <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check7"
+                  name="check"
+                  />
+               <label class="form-check-label" for="check7">Ancient</label>
+            </div>
+            <div class="form-check form-switch">
+               <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="check8"
+                  name="check"
+                  />
+               <label class="form-check-label" for="check8">Urban</label>
+            </div>
+            <label for="password">Password</label>
+            <input
+               class="form-control"
+               type="password"
+               id="password"
+               name="password"
+               placeholder="Enter Password"
+               required
+               />
+               <small id="em" class="form-text text-muted">
+               Password must be at least 8 characters long and include a mix of uppercase, lowercase, number, and special character.</small>
+            <label for="confirmPassword">Re-enter Password</label>
+            <input
+               class="form-control"
+               type="password"
+               id="confirmPassword"
+               name="confirmPassword"
+               placeholder="Confirm Your Password"
+               required
+               />
+            
+            <div style="display: flex; align-items: center">
+               <input
+                  type="checkbox"
+                  style="width: 20px; height: 20px; margin-right: 10px"
+                  id="checkcookies"
+                  class="mt-2"
+                  name="checkcookies"
+                  required
+                  />
+               <label for="checkcookies" class="mt-1 form-check-label">
+               Accept All</label>
+               <!-- Button trigger modal -->
+               <button type="button"  class="mt-0 btn ms-0" data-toggle="modal" data-target="#exampleModalCenter">
+               <b>Cookies</b>
+               </button>
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLongTitle">Cookies</h5>
+                        </div>
+                        <div class="modal-body">
+                           <h1>Cookie Policy for Touroopi</h1>
+                           <p>This is the Cookie Policy for Touroopi, accessible from Touroopi.com</p>
+                           <p><strong>What Are Cookies</strong></p>
+                           <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
+                           <p><strong>How We Use Cookies</strong></p>
+                           <p>We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.</p>
+                           <p><strong>Disabling Cookies</strong></p>
+                           <p>You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies. This Cookies Policy was created with the help of the <a href="https://www.cookiepolicygenerator.com/cookie-policy-generator/">Cookies Policy Generator</a>.</p>
+                           <p><strong>The Cookies We Set</strong></p>
+                           <ul>
+                              <li>
+                                 <p>Account related cookies</p>
+                                 <p>If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.</p>
+                              </li>
+                              <li>
+                                 <p>Login related cookies</p>
+                                 <p>We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in.</p>
+                              </li>
+                           </ul>
+                           <p><strong>Third Party Cookies</strong></p>
+                           <p>In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
+                           <ul>
+                              <li>
+                                 <p>This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
+                                 <p>For more information on Google Analytics cookies, see the official Google Analytics page.</p>
+                              </li>
+                              <li>
+                                 <p>From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.</p>
+                              </li>
+                              <li>
+                                 <p>The Google AdSense service we use to serve advertising uses a DoubleClick cookie to serve more relevant ads across the web and limit the number of times that a given ad is shown to you.</p>
+                                 <p>For more information on Google AdSense see the official Google AdSense privacy FAQ.</p>
+                              </li>
+                              <li>
+                                 <p>We also use social media buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work the following social media sites including; {List the social networks whose features you have integrated with your site?:12}, will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+                              </li>
+                           </ul>
+                           <p><strong>More Information</strong></p>
+                           <p>Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site.</p>
+                           <p>For more general information on cookies, please read <a href="https://www.cookiepolicygenerator.com/sample-cookies-policy/">the Cookies Policy article</a>.</p>
+                           <p>However if you are still looking for more information then you can contact us through one of our preferred contact methods:</p>
+                           <ul>
+                              <li>Email: touroopi1@gmail.com</li>
+                           </ul>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br />
+            <button type="submit" class="buton" id="signupButton" name="submit">Sign Up</button>
+         </form>
+         <div class="login-link">
+            <a href="login.html">You have an account? (Login)</a>
+         </div>
+      </div>
+      <script src="../bootstrap/js important/bootstrap.bundle.js"></script>
+      <!-- jQuery and Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>
