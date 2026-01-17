@@ -1,0 +1,865 @@
+<!--Destinations file-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Favicon -->
+    <title>Destinations-Touroopi</title>
+    <link rel="icon" type="image/x-icon" href="imgs/imp/logo.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Touroopi tour packege">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ashen , Buddini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/basic_style.css" rel="stylesheet">
+    <link href="bootstrap/css important/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <link rel="'stylesheet" href="../src/output.css">
+
+    <style>
+      .bgimg{
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+  
+    <!--Navigation Bar-->
+  <nav class="max-h-20 navbar navbar-expand-lg " style="background-color: #dbf2e1;" id="navbar">
+    <map name="logo">
+        <area shape="circle" coords="448,437,899,451" name="logo" href="https://www.youtube.com/@touroopi" target="_blank">
+    </map>
+    <img src="imgs/imp/logo.png" alt="Touroopi Logo" usemap="#logo" width="85px" height="85px" class="px-2 py-2 ms-4">
+    <a href="index.html" class="navbar-brand ps-3" style="font-size: 50px; color: #14c543; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Touroopi</b></a>
+  
+
+    <div class="navbar-collapse justify-content-center" id="nav1" >
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link ps-5 " style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ps-4 active" href="destinations.html"  style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">
+                    Destinations
+                </a>
+                <ul class="dropdown-menu dropdown-content" >
+                  <li><a href="destinations.html#sec1" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Asia</a></li>
+                  <li><a href="destinations.html#sec2" class="block px-4 py-2 " style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Africa</a></li>
+                  <li><a href="destinations.html#sec3" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Europe</a></li>
+                  <li><a href="destinations.html#sec4" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">North America</a></li>
+                  <li><a href="destinations.html#sec5" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">South America</a></li>
+                  <li><a href="destinations.html#sec6" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Australia</a></li>
+                  <li><a href="destinations.html#sec7" class="block px-4 py-2" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Middle Easet And Balkans</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="gallery.php" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a href="Contact Us.html" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="other/sign up.html" class="px-3 py-2 btn btn-success ms-4" role="button">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a href="other/login.html" class="px-4 py-2 btn btn-success ms-4" role="button">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="py-16  bgimg" style="background-image: url(imgs/another/n1.jpg);">
+            <div class="container mx-auto">
+              <h1 class="mb-8 text-4xl font-bold" style="text-align: center; color: #fff;">Find Your favorite Tour</h1>
+              <div class="flex justify-center">
+                <div class="w-full max-w-md">
+                  <div>
+                    <input type="text" class="w-full px-4 py-2 rounded-md positin-relative" placeholder="Search for destinations">
+                    <button class="btn  btn-success position-absolute" >search</button>
+  
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--Asia Section-->
+          <!--Main bootsrap classes we used
+          flex-shrink-0 : prevrnt shrinking the flex items
+          w-64 : width 64 
+          -->
+          <section class="py-16" style="background-color: rgb(255, 255, 255);" id="sec1">
+            <div class="container mx-auto">
+              <h2 class="mb-8 text-3xl font-bold text-center">Asia</h2>
+              <div class="d-flex flex-nowrap overflow-auto">
+                
+                <!-- Sri Lanka Card -->
+                <div class="flex flex-shrink-0 w-64 mx-4 overflow-hidden  duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card">
+                    <img src="imgs/continents/asia/sri.jpg" alt="Sri Lanka" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Sri Lanka</h3>
+                      <p class="card-text text-gray-600">Discover the natural beauty and rich culture<br> of Sri Lanka.</p>
+                      <a href="destinations/Countries/SriLanka.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- India Card -->
+                <div class="flex flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/asia/india.jpg" alt="India" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">India</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks <br> of India.</p>
+                      <a href="destinations/Countries/India.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- China Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/asia/china.jpg" alt="China" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">China</h3>
+                      <p class="card-text text-gray-600">Experience the natural wonders and diverse culture <br> of China.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Indonesia Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/asia/indonesia.jpg" alt="Indonesia" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Indonesia</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks of Indonesia.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Japan Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/asia/japan.jpg" alt="Japan" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Japan</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Japan.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- South Korea Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/asia/korea.jpg" alt="South Korea" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">South Korea</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks of South Korea.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Malaysia Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/asia/malaysia.jpg" alt="Malaysia" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Malaysia</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Malaysia.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Singapore Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/asia/singapore.jpg" alt="Singapore" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Singapore</h3>
+                      <p class="card-text text-gray-600">Discover<br> city enthusiasts<br> of Singapore.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Thailand Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/asia/thailand.jpg" alt="Thailand" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Thailand</h3>
+                      <p class="card-text text-gray-600">Discover city enthusiasts<br> of Thailand.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--Africa Section-->
+
+          <section class="py-16" style="background-color: rgb(255, 255, 255);" id="sec2">
+            <div class="container mx-auto">
+              <h2 class="mb-8 text-3xl font-bold text-center">Africa</h2>
+              <div class="d-flex flex-nowrap overflow-auto">
+                <!-- South Africa Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden  duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card">
+                    <img src="imgs/continents/Africa/south africa.jpg" alt="SA" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">South Africa</h3>
+                      <p class="card-text text-gray-600">Discover the natural beauty and rich culture<br> of South Africa.</p>
+                      <a href="destinations/Countries/SA.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Egypt Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Africa/egypt.jpg" alt="EGY" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Egypt</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Egypt.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Namibia Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Africa/namibia.jpg" alt="Namibia" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Namibia</h3>
+                      <p class="card-text text-gray-600">Experience the natural wonders and diverse culture<br> of namibia.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Zimbabwe Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Africa/zimbabwe.jpg" alt="Zim" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Zimbabwe</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Zimbabwe.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+           <!--Europe Section-->
+
+           <section class="py-16" style="background-color: rgb(255, 255, 255);" id="sec3">
+            <div class="container mx-auto">
+              <h2 class="mb-8 text-3xl font-bold text-center">Europe</h2>
+              <div class="d-flex flex-nowrap overflow-auto">
+                <!-- Germany Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden  duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card">
+                    <img src="imgs/continents/Europe/germany.jpg" alt="Ger" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Germany</h3>
+                      <p class="card-text text-gray-600">Discover the natural beauty and rich culture<br> of Germany.</p>
+                      <a href="destinations/Countries/Germany.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- France Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/france.jpg" alt="France" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">France</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks <br>of France.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Italy Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/italy.jpg" alt="Italy" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Italy</h3>
+                      <p class="card-text text-gray-600">Experience the natural wonders and diverse culture<br> of italy.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Switzerland Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/switzerland.jpg" alt="Switzerland" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Switzerland</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks <br>of switzerland.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Spain Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/spain.jpg" alt="Spain" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Spain</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Spain.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- The Netherlands Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/dutch.jpg" alt="Dutch" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">The Netherlands</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of dutchland.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Denmark Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/denmark.jpg" alt="Denmark" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Denmark</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Denmark.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Finland Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/finland.jpg" alt="Finland" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Finland</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Finland.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Norway Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/norway.jpg" alt="Norway" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Norway</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Norway.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sweden Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/sweden.jpg" alt="Sweden" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Sweden</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Sweden.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- United Kingdom Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/uk.jpg" alt="UK" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">United Kingdom</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Uk.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Austria Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/austria.jpg" alt="Austria" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Austria</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Austria.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Czech Republic Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/czech.jpg" alt="Czech Republic" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Czech Republic</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Czechia.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ireland Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/ireland.jpg" alt="IRE" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Ireland</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Ireland.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Poland Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/poland.jpg" alt="Poland" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Poland</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Poland.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Russia Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/russia.jpg" alt="Russia" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Russia</h3>
+                      <p class="card-text text-gray-600">Discover the breathtaking landscapes and outdoor adventures<br> of Russia.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Slovakia Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Europe/slovakia.jpg" alt="Slovakia" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Slovakia</h3>
+                      <p class="card-text text-gray-600">Discover the breathtaking landscapes and outdoor adventures<br> of Slovakia.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        <!--North America Section-->
+
+        <section class="py-16" style="background-color: rgb(255, 255, 255);" id="sec4">
+          <div class="container mx-auto">
+            <h2 class="mb-8 text-3xl font-bold text-center">North America</h2>
+            <div class="d-flex flex-nowrap overflow-auto">
+              <!-- USA Card -->
+              <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden  duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                <div class="card">
+                  <img src="imgs/continents/north america/usa.jpg" alt="USA" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title text-xl font-bold">United States Of America</h3>
+                    <p class="card-text text-gray-600">Discover the natural beauty and rich culture<br> of United States Of America.</p>
+                    <a href="destinations/Countries/SA.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Canada Card -->
+              <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                <div class="card overflow-hidden shadow-md hover:scale-105">
+                  <img src="imgs/continents/north america/canada.jpg" alt="Canada" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title text-xl font-bold">Canada</h3>
+                    <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Canada.</p>
+                    <a href="destinations/Countries/Canadaa.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Mexico Card -->
+              <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                <div class="card overflow-hidden shadow-md hover:scale-105">
+                  <img src="imgs/continents/north america/mexico.jpg" alt="Mexico" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title text-xl font-bold">Mexico</h3>
+                    <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Mexico.</p>
+                    <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Caribbean Card -->
+              <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                <div class="card overflow-hidden shadow-md hover:scale-105">
+                  <img src="imgs/continents/north america/caribbean.jpg" alt="Caribbean" class="card-img-top">
+                  <div class="card-body">
+                    <h3 class="card-title text-xl font-bold">Caribbean</h3>
+                    <p class="card-text text-gray-600">Experience the natural wonders and diverse culture<br> of Caribbean.</p>
+                    <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>                 
+          
+
+          <!--South America Section-->
+
+          <section class="py-16" style="background-color: rgb(255, 255, 255);" id="sec5">
+            <div class="container mx-auto">
+              <h2 class="mb-8 text-3xl font-bold text-center">South America</h2>
+              <div class="d-flex flex-nowrap overflow-auto">
+                <!-- Argentina Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden  duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card">
+                    <img src="imgs/continents/South america/argentina.jpg" alt="Argentina" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Argentina</h3>
+                      <p class="card-text text-gray-600">Discover the natural beauty and rich culture <br> of Argentina.</p>
+                      <a href="destinations/Countries/argentina.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Brasil Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/South america/brazil.jpg" alt="Brasil" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Brasil</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Brasil.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Chile Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/South america/chile.jpg" alt="Chile" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Chile</h3>
+                      <p class="card-text text-gray-600">Experience the natural wonders and diverse culture <br> of Chile.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Colombia Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/South america/colombia.jpg" alt="Colombia" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Colombia</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Colombia.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Peru Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/South america/peru.jpg" alt="Peru" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Peru</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks <br> of Peru.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>       
+
+          <!--Australia Section-->
+          <section class="py-16" style="background-color: rgb(255, 255, 255);" id="sec6">
+            <div class="container mx-auto">
+              <h2 class="mb-8 text-3xl font-bold text-center">Ocenia/Australia</h2>
+              <div class="d-flex flex-nowrap overflow-auto">
+                <!-- Australia Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden  duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card">
+                    <img src="imgs/continents/Australia/aus.jpg" alt="Aus" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">Australia</h3>
+                      <p class="card-text text-gray-600">Discover<br> the natural beauty<br> and rich culture <br> of Australia.</p><br>
+                      <a href="destinations/Countries/Australia.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- New Zealand Card -->
+                <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                  <div class="card overflow-hidden shadow-md hover:scale-105">
+                    <img src="imgs/continents/Australia/nz.jpg" alt="New Zealand" class="card-img-top">
+                    <div class="card-body">
+                      <h3 class="card-title text-xl font-bold">New Zealand</h3>
+                      <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks of New Zealand.</p>
+                      <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> 
+
+             <!--Middle Easet And Balkans Section-->
+             <section class="py-16" style="background-color: rgb(255, 255, 255);" id="sec7">
+              <div class="container mx-auto">
+                <h2 class="mb-8 text-3xl font-bold text-center">Middle Easet And Balkans</h2>
+                <div class="d-flex flex-nowrap overflow-auto">
+                  <!-- Greece Card -->
+                  <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden  duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                    <div class="card">
+                      <img src="imgs/continents/middle easet and balkans/greece.jpg" alt="Greece" class="card-img-top">
+                      <div class="card-body">
+                        <h3 class="card-title text-xl font-bold">Greece</h3>
+                        <p class="card-text text-gray-600">Discover the natural beauty and rich culture<br> of Greece.</p><br>
+                        <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Türkiye Card -->
+                  <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                    <div class="card overflow-hidden shadow-md hover:scale-105">
+                      <img src="imgs/continents/middle easet and balkans/turkey.jpg" alt="Türkiye" class="card-img-top">
+                      <div class="card-body">
+                        <h3 class="card-title text-xl font-bold">Türkiye</h3>
+                        <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks <br> of turkey.</p>
+                        <a href="destinations/Countries/Turkey.html" class="mt-2 btn btn-success" role="button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Romania Card -->
+                  <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                    <div class="card overflow-hidden shadow-md hover:scale-105">
+                      <img src="imgs/continents/middle easet and balkans/romania.jpg" alt="Romania" class="card-img-top">
+                      <div class="card-body">
+                        <h3 class="card-title text-xl font-bold">Romania</h3>
+                        <p class="card-text text-gray-600">Experience the natural wonders and diverse culture <br> of Romania.</p>
+                        <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Saudi Arabia Card -->
+                  <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                    <div class="card overflow-hidden shadow-md hover:scale-105">
+                      <img src="imgs/continents/middle easet and balkans/saudi arabia.jpg" alt="Saudi Arabia" class="card-img-top">
+                      <div class="card-body">
+                        <h3 class="card-title text-xl font-bold">Saudi Arabia</h3>
+                        <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks <br> of Saudi.</p>
+                        <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- United Arab Emirates Card -->
+                  <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                    <div class="card overflow-hidden shadow-md hover:scale-105">
+                      <img src="imgs/continents/middle easet and balkans/uae.jpg" alt="UAE" class="card-img-top">
+                      <div class="card-body">
+                        <h3 class="card-title text-xl font-bold">United Arab Emirates</h3>
+                        <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks <br> of UAE.</p>
+                        <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slovenia Card -->
+                  <div class="flex-shrink-0 w-64 mx-4 snap-center overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md hover:scale-105">
+                    <div class="card overflow-hidden shadow-md hover:scale-105">
+                      <img src="imgs/continents/middle easet and balkans/slovenia.jpg" alt="Slovenia" class="card-img-top">
+                      <div class="card-body">
+                        <h3 class="card-title text-xl font-bold">Slovenia</h3>
+                        <p class="card-text text-gray-600">Explore the vibrant cities and historic landmarks<br> of Slovenia.</p>
+                        <a href="#" class="mt-2 btn btn-success" role="button">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </section>        
+
+       <!-- Modal -->
+       <div class="mx-auto">
+        <div class="modal fade" id="cookies" tabindex="-1" role="dialog" aria-labelledby="cookiesTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                          <h4 class="modal-title" id="exampleModalLongTitle"><strong>Cookies</strong></h4>
+                    </div>
+                    <div class="modal-body">
+                       <h1 style="font-size: 30px; "><b>Cookie Policy for Touroopi</b></h1><br>
+                       <p>This is the Cookie Policy for Touroopi, accessible from Touroopi.com</p><br>
+                       <p><strong>What Are Cookies</strong></p><br>
+                       <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
+                       <p><strong><br>How We Use Cookies</strong></p><br>
+                       <p>We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.</p>
+                       <p><strong><br>Disabling Cookies</strong></p><br>
+                       <p>You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies. This Cookies Policy was created with the help of the <a href="https://www.cookiepolicygenerator.com/cookie-policy-generator/">Cookies Policy Generator</a>.</p>
+                       <p><strong><br>The Cookies We Set</strong></p><br>
+                       <ul>
+                          <li>
+                             <p><br><strong>Account related cookies</strong></p><br>
+                             <p>If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.</p>
+                          </li>
+                          <li>
+                             <p><br><strong>related cookies</strong> </p><br>
+                             <p>We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in.</p>
+                          </li>
+                       </ul>
+                       <p><strong><br>Third Party Cookies</strong></p><br>
+                       <p>In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
+                       <ul>
+                          <li>
+                             <p>This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p><br>
+                             <p>For more information on Google Analytics cookies, see the official Google Analytics page.</p>
+                          </li>
+                          <li>
+                             <p>From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.</p><br>
+                          </li>
+                          <li>
+                             <p>The Google AdSense service we use to serve advertising uses a DoubleClick cookie to serve more relevant ads across the web and limit the number of times that a given ad is shown to you.</p><br>
+                             <p>For more information on Google AdSense see the official Google AdSense privacy FAQ.</p>
+                          </li>
+                          <li>
+                             <p>We also use social media buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work the following social media sites including; {List the social networks whose features you have integrated with your site?:12}, will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p><br>
+                          </li>
+                       </ul>
+                       <p><strong>More Information</strong></p>
+                       <p>Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site.</p>
+                       <p>For more general information on cookies, please read <a href="https://www.cookiepolicygenerator.com/sample-cookies-policy/">the Cookies Policy article</a>.</p>
+                       <p>However if you are still looking for more information then you can contact us through one of our preferred contact methods:</p>
+                       <ul>
+                          <li>Email: touroopi1@gmail.com</li>
+                       </ul><br><br>
+                       <p>As is common practice with almost all professional websites, this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it, and why we sometimes need to store these cookies...</p>
+                    
+                    <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div> 
+       </div>
+          
+
+     <!-- Footer Content -->
+     <footer class="py-6 text-white" style="background-color: rgb(80, 237, 132);">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <div class="mb-4 md:mb-0">
+            <a style="color: black;" href="other/pp.html">&copy; 2024 Touroopi. All rights reserved.</a>
+          </div>
+          <div class="flex flex-col items-center mb-4 md:mb-0 md:flex-row">
+            <a href="https://mail.google.com/mail/u/4/" target="_blank" class="mt-2 md:mb-0 md:mr-4" style="color: black;">Gmail Account: touroopi1@gmail.com</a>
+            <div class="flex items-center">
+              <span class="mt-2 mr-4" style="color: black;">Follow Us On</span>
+              <a href="https://www.youtube.com/results?search_query=touroopi" class="mt-2 mr-2 hover:text-gray-400" target="_blank">
+                <img src="imgs/icons/youtube.png" width="25" height="25" alt="YouTube">
+              </a>
+              <a href="https://web.facebook.com/people/Touroopi-media/100083408651046/?ref=page_internal" class="mt-2 mr-2 hover:text-gray-400" target="_blank">
+                <img src="imgs/icons/fb.png" width="25" height="25" alt="Facebook">
+              </a>
+              <a href="https://www.tiktok.com/@touroopi?_d=secCgYIASAHKAESPgo8VXbiBOrlBoEXI1pr6xmiE2Vf6oo6otVIPHjFqZlVfSe8BG8tSB%2F4%2FDJ9o0NNXuDBaP2%2BaKfUOkTUyUAjGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAATvqm-KruZw5nTkuobWSzSgiW-Fpe-Or2uK3u6N7jU7FrpdXSxgZVNmrUF1sZoSaK&sec_user_id=MS4wLjABAAAATvqm-KruZw5nTkuobWSzSgiW-Fpe-Or2uK3u6N7jU7FrpdXSxgZVNmrUF1sZoSaK&share_app_id=1233&share_author_id=7116848282169410566&share_link_id=4e56cb21-b589-436c-b353-d94d70e137d5&source=h5_m&timestamp=1657561319&u_code=e2h7c7fb3a6576&user_id=7116848282169410566&utm_campaign=client_share&utm_medium=android&utm_source=copy"
+                 class="mt-2 mr-2 hover:text-gray-400" target="_blank">
+                <img src="imgs/icons/tiktok.png" width="18" height="18" alt="TikTok">
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <!-- Button trigger modal -->
+            <a type="button" data-toggle="modal" data-target="#cookies" style="color: black;">
+              Cookies
+          </a>
+            <a href="#" class="hover:text-gray-400 ms-4" style="color: black;">FAQs</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <!--Mouse Over and Out Customize-->
+
+  
+  <script>
+    /*function OmOver(){
+      document.getElementById('nav1').style.color='blue';
+    }
+
+    function OmOut(){
+      document.getElementById('nav1').style.color='black';
+    }*/
+    
+      function OmOver(x) {
+          x.style.color = "blue";
+      }
+
+      function OmOut(x) {
+          x.style.color = "";
+      }
+  
+  </script>
+
+
+<script src="bootstrap/js important/bootstrap.bundle.js"></script>
+
+<!-- jQuery and Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
