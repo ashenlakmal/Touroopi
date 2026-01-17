@@ -1,0 +1,475 @@
+<!--Index file-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!--Favicon -->
+      <title>Touroopi- Explore Your travel destinations with us</title>
+      <link rel="icon" type="image/x-icon" href="../../imgs/imp/logo.png">
+      <meta charset="UTF-8">
+      <meta name="description" content="Touroopi tour packege">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="Ashen , Buddini">
+
+      <!-- This tag  adjusting different devices based on its size and scale according to the device's screen size-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <!-- Customized Bootstrap Stylesheet -->
+
+      <!--Basic style for navigation bar and content and video card-->
+      <link rel="stylesheet" href="css/basic_style.css">
+
+      <!--import Bootstrap min file-->
+      <link href="bootstrap/css important/bootstrap.min.css" rel="stylesheet">
+
+      <!--Old bootstrap CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+      <!--Get Tailwind CDN min file from Jsdelivr -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/postcss7-compat@2.2.17/dist/tailwind.min.css">
+      
+   </head>
+   <body style="background-color: rgb(252, 252, 252);">
+      <!--Formaly Used Bootstrap class here for touroopi's navigation bar
+      
+         navbar:  For creating navigation bar
+         navbr-expand-sm : navigation bar expanding breakpoint creating
+         navbar-brand : create brand name
+         ps : padding start(pe : padding end, pt : padding top , px : padding add end and start, py: padding add top and bottom)
+         ms : marging (me : margin end, mt : margin top , mx : margin add end and start, my: margin add top and bottom)       
+         justify-content-center : content justify after center
+         navbar-nav : create navigation link in here
+         navbar-item : one item in the navbar-nav
+         active : display or show active link(active webpage)
+         dropdown : create dropdown items
+         btn: button
+         btn-success : Success colr button
+         block : crete display as block(multi lines)
+         navbar-collapse : Group the navbar items
+
+      -->  
+      <!--Navigation Bar-->
+      <nav class="max-h-20 navbar navbar-expand-sm " style="background-color: #dbf2e1;">
+        <!--Create map for brand logo--> 
+        <map name="logo">
+           <area shape="circle" coords="448,437,899,451" name="logo" href="https://www.youtube.com/@touroopi" target="_blank">
+        </map>
+
+        <img src="imgs/imp/logo.png" alt="Touroopi Logo" usemap="#logo" width="85px" height="85px" class="px-2 py-2 ms-4">
+        <a href="index.html" class="navbar-brand ps-3" style="font-size: 50px; color: #14c543; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Touroopi</b></a>
+        
+        <div class="navbar-collapse justify-content-center">
+           <ul class="navbar-nav">
+              <li class="nav-item">
+                 <a href="index.html" class="nav-link active ps-5 " style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Home</a>
+              </li>
+              <li class="nav-item">
+                 <a href="about.html" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle ps-4" href="destinations.html"  style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">
+                 Destinations
+                 </a>
+                 <ul class="dropdown-menu dropdown-content" >
+                    <li><a href="destinations.html#sec1" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Asia</a></li>
+                    <li><a href="destinations.html#sec2" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Africa</a></li>
+                    <li><a href="destinations.html#sec3" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Europe</a></li>
+                    <li><a href="destinations.html#sec4" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">North America</a></li>
+                    <li><a href="destinations.html#sec5" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">South America</a></li>
+                    <li><a href="destinations.html#sec6" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Australia</a></li>
+                    <li><a href="destinations.html#sec7" class="block px-4 py-2" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Middle Easet And Balkans</a></li>
+                 </ul>
+              </li>
+              <li class="nav-item">
+                 <a href="gallery.php" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Gallery</a>
+              </li>
+              <li class="nav-item">
+                 <a href="Contact Us.html" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                 <a href="other/sign up.html" class="px-3 py-2 btn btn-success ms-4" role="button">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                 <a href="other/login.html" class="px-4 py-2 btn btn-success ms-4" role="button">Login</a>
+              </li>
+           </ul>
+        </div>
+     </nav>
+
+      
+     <!--Hero-->
+
+     <!--Formally Used Bootstrap class here for touroopi's index.html page hero
+     
+     container : manage content's width base on the screen size
+     container-fluid : manage 100% width based on the device
+     row: create row
+     fs: font size
+     position-relative : positioning search bar into end inthe search bar
+     mx-auto : auto centering based on screen size
+     position-absolute : search button positioning absolute relaed on search bar
+     rounded-phill : search bar rounding 
+
+     -->
+     <div class="py-5 mb-5 container-fluid " 
+     style="background-image: url(imgs/another/peter-thomas-TRAYV5rsA9Y-unsplash.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;">
+     
+     <div class="container py-5">
+        <div class="py-5 row justify-content-center">
+           <div style="text-align: center;">
+              <h1 style="font-family:Georgia, 'Times New Roman', Times, serif ; color: aliceblue; font-size: 55px;">
+                 Enjoy Your Vacation With Us
+              </h1>
+              <p class="mb-4 text-white fs-4 ">Search any place do you want to visit!</p>
+              <div class="mx-auto position-relative w-75 ">
+                 <input class="border-2 py-7 border-success form-control rounded-pill ps-4 pe-5" type="text" placeholder="Eg: Sri Lanka">
+                 <button type="button" class="top-0 px-4 py-2 mt-2 btn btn-success rounded-pill position-absolute end-0 me-2">Search</button>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  </div>  
+
+
+
+      <div class="container my-4">
+         <!-- First Card Deck -->
+          <!--Used Bootstrap classes for card decks
+          
+          card-deck : create card deck
+          overflow-hidden : create card deck without overflow cards
+          shadow-md : add shadow for card(md : medium, sm: small , lg: large , xl : extra large)
+          hover : change scale when  mouse over the card
+          crd-img-top : card image into top of the card
+          transform : add transform for card
+          duration-500 Manage mouse overing transform duration in miliseconds
+          card- body , card-title : create card body and card title respectivly
+   
+          -->
+         <div class="mb-4 card-deck">
+            <div class="overflow-hidden duration-500 transform shadow-md card hover:scale-105">
+               <img class="card-img-top" src="imgs/grids/beach side.jpg" alt="Beach">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Beach Side</h5>
+                  <p class="card-text">
+                    Discover serene beach getaways and coastal paradises perfect for your next escape.</p>
+                  <a href="contents/BeachSides/beach.html" class="mt-2 btn btn-success" role="button">Explore</a>
+               </div>
+
+            </div>
+            <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md card hover:scale-105">
+               <img class="card-img-top" src="imgs/grids/country side.jpg" alt="Country">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Country Side</h5>
+                  <p class="card-text">
+                    Explore the tranquil beauty and rustic charm of picturesque countryside retreats.</p>
+                  <a href="contents/Countryside/country.html" class="mt-2 btn btn-success">Explore</a>
+               </div>
+
+            </div>
+            <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md card hover:scale-105">
+               <img class="card-img-top" src="imgs/grids/festivals.jpg" alt="Festivals">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Festivals</h5>
+                  <p class="card-text">
+                    Dive into vibrant festivals around the world, celebrating diverse cultures and traditions.
+                  </p>
+                  <a href="contents/Festivals/festivals.html" class="mt-2 btn btn-success">Explore</a>
+               </div>
+
+            </div>
+            <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md card hover:scale-105">
+               <img class="card-img-top" src="imgs/grids/nature.jpg" alt="Nature">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Nature And Wildlife</h5>
+                  <p class="card-text">Immerse yourself in breathtaking natural landscapes and wildlife adventures.</p>
+                  <a href="contents/nature and wildlife/natureandwild.html" class="mt-2 btn btn-success">Explore</a>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- Second Card Deck -->
+         <div class="mb-4 card-deck">
+            <div class="overflow-hidden duration-300 transform shadow-md card hover:scale-105">
+               <img class="card-img-top" src="imgs/grids/foods.jpg" alt="Foods">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Foods</h5>
+                  <p class="card-text">
+                    Savor the flavors of global cuisines and culinary delights from every corner of the world.</p>
+                  <a href="contents/Food/food.html" class="mt-2 btn btn-success" role="button">Explore</a>
+               </div>
+
+            </div>
+            <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md card hover:scale-105">
+               <img class="card-img-top" src="imgs/grids/advemture.jpg" alt="Adventure">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Adventure</h5>
+                  <p class="card-text">
+                    Embark on thrilling adventures and adrenaline-pumping activities for the daring traveler.</p>
+                  <a href="contents/Adventure/adventure.html" class="mt-2 btn btn-success">Explore</a>
+               </div>
+
+            </div>
+            <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md card hover:scale-105">
+               <img class="card-img-top" src="imgs/grids/ancient.jpg" alt="Ancient">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Ancient</h5>
+                  <p class="card-text">
+                    Uncover the mysteries of ancient civilizations and their enduring legacies.
+                  </p>
+                  <a href="contents/Ancient/ancient.html" class="mt-2 btn btn-success">Explore</a>
+               </div>
+
+            </div>
+            <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-md shadow-md card hover:scale-105">
+               <img class="card-img-top" src="imgs/grids/urban.jpg" alt="Urban">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Urban</h5>
+                  <p class="card-text">Experience the dynamic energy and attractions of bustling urban centers and modern cities.</p>
+                  <a href="contents/Urban/urban.html" class="mt-2 btn btn-success">Explore</a>
+               </div>
+  
+            </div>
+         </div>
+      </div>
+      <br><br>
+
+      <!--Latest Contents-->
+      <!--Used bootstrap classes for latese content and latest videos
+      grid : create grid
+      md:grid-cols-2 :  create grid as 1 column upto medium size screen.hence upto medium size its create 2 column
+      gap-20 : manage gap among the grids
+      w-full-widgh full
+      
+      -->
+
+      <div class="container grid grid-cols-1 gap-20 px-4 py-16 mx-auto md:grid-cols-2">
+        <div>
+           <h1 style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 40px;"><b>Latest Content</b></h1>
+           <div class="space-y-10">
+              <div class="mt-4 content-card">
+                 <img src="destinations/Countries/argentina.jpg"  alt="Content 1" class="w-full h-48 ">
+
+                 <div class="p-4 ">
+                    <h4 style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px;"><b>Argentina</b></h4>
+                    <p style="font-size: 18px; color: darkslateblue;">Top Places to visit in Argentina.</p>
+                    <a href="destinations/Countries/argentina.html" target="_blank" class="map-link" >View content</a>
+                 </div>
+              </div>
+              <div class="content-card">
+                 <img src="destinations/Countries/Canada.jpg"  alt="Content 1" class="object-cover w-full h-48">
+     
+                 <div class="p-4">
+                    <h4 style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px;"><b>Canada</b></h4>
+                    <p style="font-size: 18px; color: darkslateblue;">Top Places to visit in Canada.</p>
+                    <a href="destinations/Countries/Canadaa.html" target="_blank" class="map-link">View content</a>
+                 </div>
+              </div>
+              <div class="content-card">
+                 <img src="destinations/Countries/anuradhapura, sri lanka.jpg"  alt="Content 1" class="object-cover w-full h-48">
+
+                 <div class="p-4">
+                    <h4 style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px;"><b>Sri Lanka</b></h4>
+                    <p style="font-size: 18px; color: darkslateblue;">Top Places to visit in Sri Lanka.</p>
+                    <a href="destinations/Countries/SriLanka.html" target="_blank" class="map-link">View content</a>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <!--Videos-->
+        <div>
+           <h1 style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 40px;"><b>Latest Videos</b></h1>
+           <div class="space-y-8">
+              <div class="mt-4 content-card">
+                 <img src="imgs/thumbnails/hq720.jpg"  alt="Content 1" class="w-full h-48 ">
+
+                 <div class="p-4">
+                    <h4 style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px;"><b>Top 15 places</b></h4>
+                    <p style="font-size: 18px; color: darkslateblue;">Top 15 places to visit in NZ north island.</p>
+                    <a href="https://youtu.be/3VU6-Z2VRRk?si=RDz-KR_RNThW4prk" target="_blank" class="map-link">View on youtube</a>
+                 </div>
+              </div>
+              <div class="content-card">
+                 <img src="imgs/thumbnails/maxresdefault.jpg"  alt="Content 1" class="w-full h-48 ">
+  
+                 <div class="p-4">
+                    <h4 style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px;"><b>Wanaka</b></h4>
+                    <p style="font-size: 18px; color: darkslateblue;">Wanaka Travel Guide.</p>
+                    <a href="https://youtu.be/Y1Q297-uIes?si=NrwN5XMUWql07JQl" target="_blank" class="map-link">View on youtube</a>
+                 </div>
+              </div>
+              <div class="content-card">
+                 <img src="imgs/thumbnails/maxresdefault (1).jpg"  alt="Content 1" class="w-full h-48 ">
+
+                 <div class="p-4">
+                    <h4 style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px;"><b>Nelson</b></h4>
+                    <p style="font-size: 18px; color: darkslateblue;">Nelson Travel Guide.</p>
+                    <a href="https://youtu.be/RqGlMIIRgp0?si=5_P74qUalOViZRZR" target="_blank" class="map-link">View on youtube</a>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+     <!-- Modal for cookies plicies-->
+      <!--Used Bootstrap Classes for Modal
+      
+      modal : create modal
+      fade : adding fade for modal
+      modal-dialog & modal-dialog-centered : modal create as dilog and centered
+      modal-content : content starts 
+      modal-header, modal-body, modal-footer : create modal's head,body and footer
+
+      -->
+     
+     <div class="mx-auto">
+     <div class="modal fade" id="cookies"  role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+              <div class="modal-header">
+                 <h4 class="modal-title" id="exampleModalLongTitle"><strong>Cookies</strong></h4>
+              </div>
+              <div class="modal-body">
+                 <h1 style="font-size: 30px; ">
+                  
+                  <b>Cookie Policy for Touroopi</b></h1>
+                 <br>
+                 <p>This is the Cookie Policy for Touroopi, accessible from Touroopi.com</p>
+                 <br>
+                 <p><strong>What Are Cookies</strong></p>
+                 <br>
+                 <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
+                 <p><strong><br>How We Use Cookies</strong></p>
+                 <br>
+                 <p>We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.</p>
+                 <p><strong><br>Disabling Cookies</strong></p>
+                 <br>
+                 <p>You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies. This Cookies Policy was created with the help of the <a href="https://www.cookiepolicygenerator.com/cookie-policy-generator/">Cookies Policy Generator</a>.</p>
+                 <p><strong><br>The Cookies We Set</strong></p>
+                 <br>
+                 <ul>
+                    <li>
+                       <p><br><strong>Account related cookies</strong></p>
+                       <br>
+                       <p>If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.</p>
+                    </li>
+                    <li>
+                       <p><br><strong>related cookies</strong> </p>
+                       <br>
+                       <p>We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in.</p>
+                    </li>
+                 </ul>
+                 <p><strong><br>Third Party Cookies</strong></p>
+                 <br>
+                 <p>In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
+                 <ul>
+                    <li>
+                       <p>This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
+                       <br>
+                       <p>For more information on Google Analytics cookies, see the official Google Analytics page.</p>
+                    </li>
+                    <li>
+                       <p>From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.</p>
+                       <br>
+                    </li>
+                    <li>
+                       <p>The Google AdSense service we use to serve advertising uses a DoubleClick cookie to serve more relevant ads across the web and limit the number of times that a given ad is shown to you.</p>
+                       <br>
+                       <p>For more information on Google AdSense see the official Google AdSense privacy FAQ.</p>
+                    </li>
+                    <li>
+                       <p>We also use social media buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work the following social media sites including; {List the social networks whose features you have integrated with your site?:12}, will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+                       <br>
+                    </li>
+                 </ul>
+                 <p><strong>More Information</strong></p>
+                 <p>Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site.</p>
+                 <p>For more general information on cookies, please read <a href="https://www.cookiepolicygenerator.com/sample-cookies-policy/">the Cookies Policy article</a>.</p>
+                 <p>However if you are still looking for more information then you can contact us through one of our preferred contact methods:</p>
+                 <ul>
+                    <li>Email: touroopi1@gmail.com</li>
+                 </ul>
+                 <br><br>
+                 <p>As is common practice with almost all professional websites, this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it, and why we sometimes need to store these cookies...</p>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+     <!-- Footer Content -->
+      <!--Used bootstrap clases for footer
+      
+      flex : create content for one single line
+      flex-col : diffault size categorize flex into colomns
+      md:flex-row : show content row by row in medium show
+
+      
+      -->
+     <footer class="py-6 " style="background-color: rgb(80, 237, 132);">
+        <div class="container px-4 mx-auto">
+           <div class="flex flex-col items-center justify-between md:flex-row">
+               <!--This is one single flex column-->
+              <div class="mb-4">
+                 <a style="color: black;" href="other/pp.html">&copy; 2024 Touroopi. All rights reserved.</a>
+            </div>
+              <!--Second flex column-->
+              <div class="flex flex-col items-center mb-4 md:mb-0 md:flex-row">
+                 
+                 <div class="flex items-center">
+                  <a href="https://mail.google.com" target="_blank" class="mt-2 " style="color: black;">Gmail Account: touroopi1@gmail.com</a>
+                    <span class="mt-2 mr-4 ms-4" style="color: black;">Follow Us On</span>
+                    <a href="https://www.youtube.com/results?search_query=touroopi" class="ms-2" target="_blank">
+                    <img src="imgs/icons/youtube.png" width="25" height="25" alt="YouTube">
+                    </a>
+                    <a href="https://web.facebook.com/people/Touroopi-media/100083408651046/?ref=page_internal" class="ms-2 " target="_blank">
+                    <img src="imgs/icons/fb.png" width="25" height="25" alt="Facebook">
+                    </a>
+                    <a href="https://www.tiktok.com/@touroopi?_d=secCgYIASAHKAESPgo8VXbiBOrlBoEXI1pr6xmiE2Vf6oo6otVIPHjFqZlVfSe8BG8tSB%2F4%2FDJ9o0NNXuDBaP2%2BaKfUOkTUyUAjGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAATvqm-KruZw5nTkuobWSzSgiW-Fpe-Or2uK3u6N7jU7FrpdXSxgZVNmrUF1sZoSaK&sec_user_id=MS4wLjABAAAATvqm-KruZw5nTkuobWSzSgiW-Fpe-Or2uK3u6N7jU7FrpdXSxgZVNmrUF1sZoSaK&share_app_id=1233&share_author_id=7116848282169410566&share_link_id=4e56cb21-b589-436c-b353-d94d70e137d5&source=h5_m&timestamp=1657561319&u_code=e2h7c7fb3a6576&user_id=7116848282169410566&utm_campaign=client_share&utm_medium=android&utm_source=copy"
+                       class="ms-2" target="_blank">
+                    <img src="imgs/icons/tiktok.png" width="18" height="18" alt="TikTok">
+                    </a>
+                 </div>
+                 <!--third flex colomn -->
+              </div>
+              <div class="flex items-center">
+                 <!--cookies modal -->
+                 <a type="button" data-toggle="modal" data-target="#cookies" style="color: black;">
+                 Cookies
+                 </a>
+                 <a href="#" class="hover:text-gray-400 ms-4" style="color: black;">FAQs</a>
+              </div>
+           </div>
+        </div>
+     </footer>
+
+      <!--Mouse Over and Out Customize-->
+      <script>
+           function OmOver(x) {
+               x.style.color = "blue";
+           }
+         
+           function OmOut(x) {
+               x.style.color = "";
+           }
+         
+      </script>
+      <script src="../../bootstrap/js important/bootstrap.bundle.js"></script>
+
+      <!-- jQuery cdn  from jquery.com-->
+      <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+      <!--Bootstrap cdn for js from bootsrap.com-->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+   </body>
+</html>
