@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!--Favicon -->
+      <title>About-Touroopi</title>
+      <link rel="icon" type="image/x-icon" href="imgs/imp/logo.png">
+      <meta charset="UTF-8">
+      <meta name="description" content="Touroopi tour packege">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="Ashen , Buddini">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="css/basic_style.css" rel="stylesheet">
+      <link href="bootstrap/css important/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+      <link rel="'stylesheet" href="../src/output.css">
+      <style>
+         * {
+         box-sizing: border-box;
+         }
+         .column {
+         float: left;
+         width: 33.33%;
+         padding: 5px;
+         }
+         .about-option {
+         background-color: rgba(255, 255, 255, 0.1);
+         backdrop-filter: blur(10px);
+         border-radius: 10px;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         padding: 2rem;
+         transition: transform 0.3s ease-in-out;
+         cursor: pointer;
+         }
+         .about-option:hover {
+         transform: translatey(-5px);
+         }
+         .about-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .li{
+         list-style: circle;
+         font-size: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <!--Navigation Bar-->
+      <nav class="max-h-20 navbar navbar-expand-lg " style="background-color: #dbf2e1;" id="navbar">
+         <map name="logo">
+            <area shape="circle" coords="448,437,899,451" name="logo" href="https://www.youtube.com/@touroopi" target="_blank">
+         </map>
+         <img src="imgs/imp/logo.png" alt="Touroopi Logo" usemap="#logo" width="85px" height="85px" class="px-2 py-2 ms-4">
+         <a href="index.html" class="navbar-brand ps-3" style="font-size: 50px; color: #14c543; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Touroopi</b></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-center" id="nav1" >
+            <ul class="navbar-nav mx-auto">
+               <li class="nav-item">
+                  <a href="index.html" class="nav-link  ps-5 " style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a href="about.html" class="nav-link active ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">About</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ps-4" href="destinations.html"  style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">
+                  Destinations
+                  </a>
+                  <ul class="dropdown-menu dropdown-content" >
+                     <li><a href="destinations.html#sec1" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Asia</a></li>
+                     <li><a href="destinations.html#sec2" class="block px-4 py-2 " style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Africa</a></li>
+                     <li><a href="destinations.html#sec3" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Europe</a></li>
+                     <li><a href="destinations.html#sec4" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">North America</a></li>
+                     <li><a href="destinations.html#sec5" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">South America</a></li>
+                     <li><a href="destinations.html#sec6" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Australia</a></li>
+                     <li><a href="destinations.html#sec7" class="block px-4 py-2" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Middle Easet And Balkans</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a href="gallery.php" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Gallery</a>
+               </li>
+               <li class="nav-item">
+                  <a href="Contact Us.html" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Contact Us</a>
+               </li>
+            </ul>
+            <!-- Profile Icon -->
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                  <a href="profile/profile.php" class="nav-link me-4">
+                  <img src="imgs/profile/profile.jpg" alt="Profile Icon" width="40px" height="40px" class="rounded-circle" title="Go-to profile">
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!--Hero Content-->
+      <div class="py-5 mb-5 container-fluid bg-primary hero-header" 
+         style="background-image: url(imgs/another/blue-8341156.jpg);
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;">
+         <div class="container py-5">
+            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif ; color: aliceblue; font-size: 85px; text-align: center;"><b>
+               Welcome to Touroopi ! </b>
+            </h1>
+            <br>
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: azure; text-align: center; font-size: 20px; "><b></b><i>We are touroopi🤗, 
+               through our channel you cannot physically experience all the things in this boundless beautiful world, 
+               but our aim is to bring them to you in detail about the places that are suitable and suitable for you 
+               to travel the world from our channel.☺️</i></b>
+            </p>
+            <div class="flex-auto about-container ">
+               <div class="ms-3 about-option" >
+                  <h1 style="font-family:Georgia, 'Times New Roman', Times, serif ; color: aliceblue; font-size: 35px; text-align: center;">
+                     <b>
+                        <ul>Our Mission </ul>
+                     </b>
+                  </h1>
+                  <br>
+                  <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: azure; font-size: 25px; text-align: center;" ><b>Despite not 
+                     having travelled the<br> world ourselves, we are two enthusiasts<br> committed to bringing the 
+                     world to you.<br> Our combined skills in design and<br> digital content creation enable us to <br>
+                     create a comprehensive and<br> reliable resource for anyone looking <br>to learn about the world's 
+                     most<br> exciting places.<br> Through thorough research and a<br> passion for storytelling, we aim to<br> 
+                     inspire and inform,<br> helping you plan your perfect adventure.</b>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--About Us-->
+      <!-- About Start -->
+      <div class="py-5 container-xxl">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 "  style="align-items: left;">
+                  <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(27, 152, 27); font-size: 25px;">About us,</h3>
+                  <p class="mb-4" style="font-size: 20px;">Our website is your ultimate guide to exploring the most fascinating destinations across the globe. We provide you with all 
+                     the information you need to plan your next adventure.
+                  </p>
+                  <p class="mb-4" style="font-size: 20px;">Here you will find:</p>
+                  <div class="mb-4 row gy-2 gx-4">
+                     <div class="col-sm-6">
+                        <ul class="font-normal li ps-5 lh-lg">
+                           <li>Destination Guides</li>
+                           <li>Cultural Insights</li>
+                           <li>Food and Drink</li>
+                           <li>Travel Stories</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6" style="min-height: 400px;">
+                  <div class="position-relative h-100">
+                     <div class="row">
+                        <div class="column col-sm-12">
+                           <span class="tab"></span>
+                           <img  src="imgs/icons/girl.png" alt="Buddini" style="object-fit: cover; ">
+                           <div class="p-4 text-center">
+                              <h5 class="mb-0">W.N.Buddini</h5>
+                              <small>passionate about content creation, brings expertise in creating
+                              engaging content and ensuring that our information is both accurate
+                              and captivating.
+                              </small>
+                           </div>
+                        </div>
+                        <div class="column col-sm-12">
+                           <span class="tab"></span>
+                           <img  src="imgs/icons/boy.png" alt="Ashen" style="object-fit: cover; " >
+                           <div class="p-4 text-center">
+                              <h5 class="mb-0">K.A.A.Lakmal</h5>
+                              <small>focuses on the visual and technical aspects of our website.
+                              His talent for design and usability ensures that our visitors 
+                              have a seamless and enjoyable experience while exploring the site.
+                              </small>
+                           </div>
+                        </div>
+                        <div class="column col-sm-12">
+                           <span class="tab"></span>
+                           <h3 style="font-family:sans-serif; font-size: 25px; text-align: justify; color:  rgb(14, 192, 73);"><i>Thank you for visiting "Touroopi". Join us as we explore the wonders
+                              of the world and help you create unforgettable memories.Happy 
+                              travels!</i>
+                           </h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Button trigger modal -->
+      <!-- Modal -->
+      <div class="mx-auto">
+      <div class="modal fade" id="cookies" tabindex="-1" role="dialog" aria-labelledby="cookiesTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle"><strong>Cookies</strong></h4>
+               </div>
+               <div class="modal-body">
+                  <h1 style="font-size: 30px; "><b>Cookie Policy for Touroopi</b></h1>
+                  <br>
+                  <p>This is the Cookie Policy for Touroopi, accessible from Touroopi.com</p>
+                  <br>
+                  <p><strong>What Are Cookies</strong></p>
+                  <br>
+                  <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
+                  <p><strong><br>How We Use Cookies</strong></p>
+                  <br>
+                  <p>We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.</p>
+                  <p><strong><br>Disabling Cookies</strong></p>
+                  <br>
+                  <p>You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies. This Cookies Policy was created with the help of the <a href="https://www.cookiepolicygenerator.com/cookie-policy-generator/">Cookies Policy Generator</a>.</p>
+                  <p><strong><br>The Cookies We Set</strong></p>
+                  <br>
+                  <ul>
+                     <li>
+                        <p><br><strong>Account related cookies</strong></p>
+                        <br>
+                        <p>If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.</p>
+                     </li>
+                     <li>
+                        <p><br><strong>related cookies</strong> </p>
+                        <br>
+                        <p>We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in.</p>
+                     </li>
+                  </ul>
+                  <p><strong><br>Third Party Cookies</strong></p>
+                  <br>
+                  <p>In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
+                  <ul>
+                     <li>
+                        <p>This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
+                        <br>
+                        <p>For more information on Google Analytics cookies, see the official Google Analytics page.</p>
+                     </li>
+                     <li>
+                        <p>From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.</p>
+                        <br>
+                     </li>
+                     <li>
+                        <p>The Google AdSense service we use to serve advertising uses a DoubleClick cookie to serve more relevant ads across the web and limit the number of times that a given ad is shown to you.</p>
+                        <br>
+                        <p>For more information on Google AdSense see the official Google AdSense privacy FAQ.</p>
+                     </li>
+                     <li>
+                        <p>We also use social media buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work the following social media sites including; {List the social networks whose features you have integrated with your site?:12}, will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+                        <br>
+                     </li>
+                  </ul>
+                  <p><strong>More Information</strong></p>
+                  <p>Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site.</p>
+                  <p>For more general information on cookies, please read <a href="https://www.cookiepolicygenerator.com/sample-cookies-policy/">the Cookies Policy article</a>.</p>
+                  <p>However if you are still looking for more information then you can contact us through one of our preferred contact methods:</p>
+                  <ul>
+                     <li>Email: touroopi1@gmail.com</li>
+                  </ul>
+                  <br><br>
+                  <p>As is common practice with almost all professional websites, this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it, and why we sometimes need to store these cookies...</p>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer Content -->
+      <footer class="py-6 text-white" style="background-color: rgb(80, 237, 132);">
+         <div class="container px-4 mx-auto">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+               <div class="mb-4 md:mb-0">
+                  <a style="color: black;" href="../../other/pp.html">&copy; 2024 Touroopi. All rights reserved.</a>
+               </div>
+               <div class="flex flex-col items-center mb-4 md:mb-0 md:flex-row">
+                  <a href="https://mail.google.com/mail/u/4/" target="_blank" class="mt-2 md:mb-0 md:mr-4" style="color: black;">Gmail Account: touroopi1@gmail.com</a>
+                  <div class="flex items-center">
+                     <span class="mt-2 mr-4" style="color: black;">Follow Us On</span>
+                     <a href="https://www.youtube.com/results?search_query=touroopi" class="mt-2 mr-2 hover:text-gray-400" target="_blank">
+                     <img src="imgs/icons/youtube.png" width="25" height="25" alt="YouTube">
+                     </a>
+                     <a href="https://web.facebook.com/people/Touroopi-media/100083408651046/?ref=page_internal" class="mt-2 mr-2 hover:text-gray-400" target="_blank">
+                     <img src="imgs/icons/fb.png" width="25" height="25" alt="Facebook">
+                     </a>
+                     <a href="https://www.tiktok.com/@touroopi?_d=secCgYIASAHKAESPgo8VXbiBOrlBoEXI1pr6xmiE2Vf6oo6otVIPHjFqZlVfSe8BG8tSB%2F4%2FDJ9o0NNXuDBaP2%2BaKfUOkTUyUAjGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAATvqm-KruZw5nTkuobWSzSgiW-Fpe-Or2uK3u6N7jU7FrpdXSxgZVNmrUF1sZoSaK&sec_user_id=MS4wLjABAAAATvqm-KruZw5nTkuobWSzSgiW-Fpe-Or2uK3u6N7jU7FrpdXSxgZVNmrUF1sZoSaK&share_app_id=1233&share_author_id=7116848282169410566&share_link_id=4e56cb21-b589-436c-b353-d94d70e137d5&source=h5_m&timestamp=1657561319&u_code=e2h7c7fb3a6576&user_id=7116848282169410566&utm_campaign=client_share&utm_medium=android&utm_source=copy"
+                        class="mt-2 mr-2 hover:text-gray-400" target="_blank">
+                     <img src="imgs/icons/tiktok.png" width="18" height="18" alt="TikTok">
+                     </a>
+                  </div>
+               </div>
+               <div class="flex items-center">
+                  <!-- Button trigger modal -->
+                  <a type="button" data-toggle="modal" data-target="#cookies" style="color: black;">Cookies</a>
+                  <a href="#" class="hover:text-gray-400 ms-4" style="color: black;">FAQs</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--Mouse Over and Out Customize-->
+      <script>
+         /*function OmOver(){
+           document.getElementById('nav1').style.color='blue';
+         }
+         
+         function OmOut(){
+           document.getElementById('nav1').style.color='black';
+         }*/
+         
+           function OmOver(x) {
+               x.style.color = "blue";
+           }
+         
+           function OmOut(x) {
+               x.style.color = "";
+           }
+         
+      </script>
+      <script src="bootstrap/js important/bootstrap.bundle.js"></script>
+      <!-- jQuery and Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>

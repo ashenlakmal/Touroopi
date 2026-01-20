@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!--Favicon -->
+      <title>Contact Us-Touroopi</title>
+      <link rel="icon" type="image/x-icon" href="imgs/imp/logo.png">
+      <meta charset="UTF-8">
+      <meta name="description" content="Touroopi tour packege">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="Ashen , Buddini">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="css/basic_style.css" rel="stylesheet">
+      <link href="bootstrap/css important/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+      <link rel="'stylesheet" href="../src/output.css">
+      <style>  
+      </style>
+   </head>
+   <body style="background-color: #e9f1eb;">
+      <!--Navigation Bar-->
+      <nav class="max-h-20 navbar navbar-expand-lg " style="background-color: #adeebe;" id="navbar">
+         <map name="logo">
+            <area shape="circle" coords="448,437,899,451" name="logo" href="https://www.youtube.com/@touroopi" target="_blank">
+         </map>
+         <img src="imgs/imp/logo.png" alt="Touroopi Logo" usemap="#logo" width="85px" height="85px" class="px-2 py-2 ms-4">
+         <a href="index.html" class="navbar-brand ps-3" style="font-size: 50px; color: #14c543; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Touroopi</b></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-center" id="nav1" >
+            <ul class="navbar-nav mx-auto">
+               <li class="nav-item">
+                  <a href="index.html" class="nav-link  ps-5 " style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a href="about.html" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">About</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ps-4" href="destinations.html"  style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">
+                  Destinations
+                  </a>
+                  <ul class="dropdown-menu dropdown-content" >
+                     <li><a href="destinations.html#sec1" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Asia</a></li>
+                     <li><a href="destinations.html#sec2" class="block px-4 py-2 " style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Africa</a></li>
+                     <li><a href="destinations.html#sec3" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Europe</a></li>
+                     <li><a href="destinations.html#sec4" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">North America</a></li>
+                     <li><a href="destinations.html#sec5" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">South America</a></li>
+                     <li><a href="destinations.html#sec6" class="block px-4 py-2 "style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Australia</a></li>
+                     <li><a href="destinations.html#sec7" class="block px-4 py-2" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Middle Easet And Balkans</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a href="gallery.html" class="nav-link ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Gallery</a>
+               </li>
+               <li class="nav-item">
+                  <a href="Contact Us.html" class="nav-link active ps-4" style="font-size: 18px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onmouseover="OmOver(this)" onmouseout="OmOut(this)">Contact Us</a>
+               </li>
+            </ul>
+            <!-- Profile Icon -->
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                  <a href="profile/profile.php" class="nav-link me-4">
+                  <img src="imgs/profile/profile.jpg" alt="Profile Icon" width="40px" height="40px" class="rounded-circle" title="Go-to profile">
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav><br><br><br>
+
+      <div class="container px-4 py-12 mx-auto sm:px-6 lg:px-8">
+         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div class="p-6 bg-white rounded-lg shadow-lg">
+               <h2 class="mb-4 text-2xl font-bold">Contact Us</h2>
+               <h2 style="font-size: 20px;"><b>Phone : +9471235687</b></h2><br>
+               <h2 style="font-size: 20px;"><b>Fax : +9471235687</b></h2><br>
+               <h2 style="font-size: 20px;"><b>Email : touroopi1@gmail.com</b></h2><br>
+               <div class="flex items-center">
+                  <h2 style="font-size: 20px;"><b>Follow Us On : </b></h2>
+                  <a href="https://www.youtube.com/results?search_query=touroopi" class="mr-2" target="_blank">
+                  <img src="imgs/icons/youtube.png" width="25px" height="25px" class="ms-3"></a>
+                  <a href="https://web.facebook.com/people/Touroopi-media/100083408651046/?ref=page_internal" class="mr-2 hover:text-gray-400" target="_blank">
+                  <img src="imgs/icons/fb.png" width="25px" height="25px"></a>
+                  <a href="https://www.tiktok.com/@touroopi?_d=secCgYIASAHKAESPgo8VXbiBOrlBoEXI1pr6xmiE2Vf6oo6otVIPHjFqZlVfSe8BG8tSB%2F4%2FDJ9o0NNXuDBaP2%2BaKfUOkTUyUAjGgA%3D&_r=1&language=en&sec_uid=MS4wLjABAAAATvqm-KruZw5nTkuobWSzSgiW-Fpe-Or2uK3u6N7jU7FrpdXSxgZVNmrUF1sZoSaK&sec_user_id=MS4wLjABAAAATvqm-KruZw5nTkuobWSzSgiW-Fpe-Or2uK3u6N7jU7FrpdXSxgZVNmrUF1sZoSaK&share_app_id=1233&share_author_id=7116848282169410566&share_link_id=4e56cb21-b589-436c-b353-d94d70e137d5&source=h5_m&timestamp=1657561319&u_code=e2h7c7fb3a6576&user_id=7116848282169410566&utm_campaign=client_share&utm_medium=android&utm_source=copy"
+                     class="mr-2 hover:text-gray-400" target="_blank">
+                  <img src="imgs/icons/tiktok.png" width="18px" height="18px"></a>
+               </div>
+            </div>   
+
+            <div class="p-6 bg-white rounded-lg shadow-lg">
+               <h2 class="mb-4 text-2xl font-bold">Get Directions</h2>
+               <div class="w-full h-64 overflow-hidden rounded-lg">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31675.06777531581!2d79.99171347322469!3d7.081464785586019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fb67a22e72d9%3A0x913a2c56a49c8d8e!2sGampaha!5e0!3m2!1sen!2slk!4v1716715956809!5m2!1sen!2slk" 
+                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Mouse Over and Out Customize-->
+      <script>
+         /*function OmOver(){
+           document.getElementById('nav1').style.color='blue';
+         }
+         
+         function OmOut(){
+           document.getElementById('nav1').style.color='black';
+         }*/
+         
+           function OmOver(x) {
+               x.style.color = "blue";
+           }
+         
+           function OmOut(x) {
+               x.style.color = "";
+           }
+         
+      </script>
+      <script src="bootstrap/js important/bootstrap.bundle.js"></script>
+      <!-- jQuery and Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+   </body>
