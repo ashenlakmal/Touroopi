@@ -1,0 +1,123 @@
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.0rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .header__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display:flex;
+    align-items: left;
+  }
+  
+  .logo img {
+    height: 100px;
+    margin-right: 1rem;
+  }
+
+  .logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-left: 2rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: var(--primary-color);
+  }
+
+  .btn{
+    align-content: flex-end;
+    display: inline-block;
+    background-color: rgb(72, 223, 98);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .content-card, .video-card {
+    background-color: rgba(122, 248, 248, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(9, 202, 22, 0.1);
+    overflow: hidden;
+  }
+
+  .content-card:hover, .video-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 12px rgba(18, 229, 85, 0.2);
+  }
+
+  .content-card img, .video-card img {
+    transition: transform 0.3s ease;
+  }
+
+  .content-card:hover img, .video-card:hover img {
+    transform: scale(1.1);
+  }
+
+  .map-link {
+    display: block;
+    color: #3b82f6;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+  }
+
+  .map-link:hover {
+    color: #2563eb;
+  }
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dbf4e8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(10, 7, 7);
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #5bef83;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
