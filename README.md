@@ -1,10 +1,10 @@
-# Touroopi - Travel & Explore 🌍
+# Touroopi - Travel & Explore 
 
 **Touroopi** is a dynamic travel web application designed to help enthusiasts discover hidden gems and popular destinations. This project was developed as a part of the **Internet and Web Technologies (ICT 142-3)** course during the 1st Year, 2nd Semester at **Uva Wellassa University**.
 
 ---
 
-## 🌟 Features
+##  Features
 
 * **Diverse Travel Content:** Explore various travel categories including:
     * 🏖️ **Beachside** | 🌿 **Countryside** | 🧗 **Adventure**
@@ -15,7 +15,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:** HTML5, CSS3, Bootstrap 5
 * **Backend:** PHP (Procedural)
@@ -24,7 +24,7 @@
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1.  **Clone the repository:**
     ```bash
@@ -40,7 +40,7 @@
 
 ---
 
-## 🎓 Academic Context
+##  Academic Context
 
 This project is a result of the knowledge gained during the **ICT 142-3** module. Originally created in mid-2024 for the **Touroopi** YouTube channel, it is now being shared as an open-source project.
 
