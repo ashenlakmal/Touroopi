@@ -53,6 +53,12 @@ This project is a result of the knowledge gained during the **ICT 142-3** module
 
 ---
 
+## 🎥 Demo Video
+
+Watch the full system demonstration on LinkedIn:
+
+👉 [Click here to watch the demo](https://www.linkedin.com/posts/ashen-lakmal-293649244_webdevelopment-php-fullstack-activity-7440767237558497280-tf1U)
+
 ## 📺 Connect with Us
 Visit our YouTube channel: **[Touroopi](https://youtube.com/@touroopi)**
 
