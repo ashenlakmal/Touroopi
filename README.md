@@ -1,4 +1,4 @@
-# Touroopi - Travel & Explore 
+# Touroopi - Travel & Explore World
 
 **Touroopi** is a dynamic travel web application designed to help enthusiasts discover hidden gems and popular destinations. This project was developed as a part of the **Internet and Web Technologies (ICT 142-3)** course during the 1st Year, 2nd Semester at **Uva Wellassa University**.
 
