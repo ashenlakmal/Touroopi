@@ -53,7 +53,7 @@ This project is a result of the knowledge gained during the **ICT 142-3** module
 
 ---
 
-## 🎥 Demo Video
+## 🎥 Demo Video of Touroopi
 
 Watch the full system demonstration on LinkedIn:
 
